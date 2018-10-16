@@ -13,5 +13,6 @@ public class GlideModule extends AppGlideModule {
    public void applyOptions(@NonNull Context context, @NonNull GlideBuilder builder) {
        long diskCacheSizeBytes = 1024 * 1024 * 30; // 30 MB
        builder.setDiskCache(new InternalCacheDiskCacheFactory(context, diskCacheSizeBytes));
+
    }
 }
